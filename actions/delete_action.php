@@ -1,6 +1,10 @@
 <?php
 session_start();
 
+if(isset($_SESSION['login']) == false){
+    header("location:../forms/login.php");
+    exit;
+}
 // step 1 = Get id to delete
 
 $id = $_GET['id'];

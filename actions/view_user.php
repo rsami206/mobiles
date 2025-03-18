@@ -1,5 +1,9 @@
 <?php
-
+session_start();
+if(isset($_SESSION['login']) == false){
+    header("location:../forms/login.php");
+    exit;
+}
 require("../includes/connection.php");
 require("../includes/header.php");
 // if(isset($_SESSION['login']) == false){
@@ -43,15 +47,15 @@ $result = mysqli_query($conect, $query_select);
             <?php
             require("../includes/navbar.php");
             ?>
-                        <h2>Visit products</h2>
-         <table class="display text-center" style="width:100%">
+                        <h2>VISIT USERS</h2>
+         <table class="display text-center shadow p-5 rounded" style="width:100%">
             
                 <thead>
                     <tr>
                         <th>id</th>
                         <th>Name</th>
+                        <th>role</th>
                         <th>email</th>
-                        <th>password</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -61,8 +65,8 @@ $result = mysqli_query($conect, $query_select);
                             echo "<tr>
                                 <td>{$row['id']}</td>
                                          <td>{$row['Name']}</td>
-                                         <td>{$row['email']}</td>
-                                         <td>{$row['password']}</td>
+                                          <td>{$row['role']}</td>
+                                         <td>{$row['email']}</td>                        
                                       </tr>";
                         }
                     } else {

@@ -1,5 +1,10 @@
 <?php
 session_start();
+
+if(isset($_SESSION['login']) == false){
+    header("location:../forms/login.php");
+    exit;
+}
 $name = $_POST['name'];
 $price =$_POST['price'];
 $discount_price=$_POST['discount_price'];

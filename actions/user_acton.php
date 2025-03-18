@@ -2,11 +2,12 @@
 session_start();
 $name = $_POST['name'];
 $email = $_POST['email'];
+$role=$_POST['role'];
 $password = $_POST['password'];
 
 
 // validation todo
-if ($name == '' || $email == '' || $password == '') {
+if ($name == '' || $email == '' || $password == '' || $role=='') {
     $_SESSION['input'] = "All input data  are requried";
     header("location:../user.php");
     exit;
@@ -26,7 +27,7 @@ if (mysqli_num_rows($result) > 0) {
     header("location:../user.php");
     exit;
 } else {
-    $q1 =  "INSERT INTO `users` (`name`, `email`, `password`) VALUES ('$name', '$email', '$hshpas')";
+    $q1 =  "INSERT INTO `users` (`name`, `email`, `password`,`role` ) VALUES ('$name', '$email', '$hshpas','$role')";
     if (mysqli_query($conect, $q1)) {
         $_SESSION['insert']="insert data successfully";
         header("location:../user.php");

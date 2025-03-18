@@ -1,5 +1,9 @@
 <?php
 session_start();
+if(isset($_SESSION['login']) == false){
+    header("location:./login.php");
+    exit;
+}
 require("../includes/connection.php");
 require("../includes/header.php");
 // if(isset($_SESSION['login']) == false){

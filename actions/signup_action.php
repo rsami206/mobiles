@@ -1,6 +1,10 @@
 <?php
 session_start();
 
+if(isset($_SESSION['login']) == false){
+    header("location:../forms/login.php");
+    exit;
+}
 // get data
 
 $name = $_POST['name'];
