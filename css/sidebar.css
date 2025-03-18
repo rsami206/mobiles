@@ -1,0 +1,59 @@
+/* Sidebar Style */
+.sidebar {
+ 
+    /* position: fixed; */
+    /* top: 0;
+    left: 0; */
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
+    /* Sidebar shadow */
+    padding-top: 30px;
+    border-radius: 10px;
+    /* Rounded corners for the sidebar */
+}
+
+.sidebar a {
+    color: #333;
+    padding: 12px 30px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    border-radius: 8px;
+    /* Rounded corners for each link */
+    margin: 5px 0;
+}
+
+/* Default style for links */
+.sidebar a:not(.active) {
+    background-color: #f8f9fa;
+    /* Light gray background */
+}
+
+/* Active link - Dashboard link */
+.sidebar a.active {
+    background-color: #007bff;
+    /* Blue background for Dashboard */
+    color: white;
+}
+
+/* Hover effect for all links */
+.sidebar a:hover {
+    background-color: #e2e6ea;
+    /* Light gray on hover */
+    color: #007bff;
+    /* Blue text color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Shadow effect */
+}
+
+/* Sidebar link icons */
+.sidebar a i {
+    margin-right: 10px;
+}
+
+/* Sidebar heading */
+.sidebar h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}

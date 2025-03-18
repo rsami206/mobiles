@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login {
+    border-radius: 10px;
+    background-image: url(https://images.unsplash.com/flagged/photo-1553475873-55d8c03e9f5f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bmlnaHQlMjBza3klMjBtb29ufGVufDB8fDB8fHww);
+}
+
+.login {
+    text-align: center;
+    position: relative;
+    color: white;
+    box-shadow: inset 0px 0px 6px 3px #ffffff38;
+    border-radius: 10px;
+}
+
+.button {
+    color: white;
+    padding-top: 0;
+    padding-left: 0;
+}
+
+.button:hover {
+    color: blue;
+}
+
+h2 {
+    margin-bottom: 40px;
+}
+
+.user {
+    color: white;
+    padding: 5px;
+    padding-left: 20px;
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.lack {
+    position: absolute;
+    top: 0px;
+    right:0px;
+}
+.product{
+    border-radius: 10px;
+  
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.mail {
+    position: absolute;
+    top: 92px;
+    right: 62px;
+}
+
+.reg {
+    border: 1px solid white;
+    margin: 20px 0;
+    padding: 7px 125px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.user {
+    background-color: transparent;
+}
+
+.button:hover {
+    color: blue;
+}
+
+.lack {
+    position: absolute;
+    top: 248px;
+    right: 62px;
+}
+
+.mail {
+    position: absolute;
+    top: 192px;
+    right: 62px;
+}
+
+.reg {
+    border: 1px solid white;
+    margin: 20px 0;
+    padding: 7px 125px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.user {
+    background-color: transparent;
+}
+
+.button:hover {
+    color: blue;
+}

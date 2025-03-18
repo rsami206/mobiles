@@ -1,0 +1,42 @@
+*{padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+.child,.product{
+    border-radius: 10px;
+    margin-top: 80px;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.child i{
+    /* padding-right: 30px; */
+    width: 10px;
+    height: 10px;
+    border-radius: 30px;
+    padding: 5px;
+  
+   color: #6288b1;
+
+    background-color:  #bcdafa;
+   
+    font-size: 20px;
+}
+.child span{
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-left: 10px;
+    
+}
+
+.icon{
+    background-color: rgb(247, 195, 195) !important;
+    color: rgb(124, 75, 75) !important;
+}
+.child p{
+    padding: 20px;
+    font-size: 20px;
+}
